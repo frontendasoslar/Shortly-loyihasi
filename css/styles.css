@@ -26,6 +26,8 @@
   --grey:#9E9AA8;
   --light-grey:#EFF1F7;
   --light-green:#2BD0D0;
+  --dark-bg:#34313D;
+  --active-button: #9AE3E3;
   --font-family: "Poppins", "Arial", sans-serif;
 }
 
@@ -49,7 +51,7 @@ body {
   height: 100%;
   flex-direction: column;
   background-color: #fff;
-  color: #000;
+  color: var(--grey);
   padding: 0;
   margin: 0;
   font-size: 15px;
@@ -59,10 +61,10 @@ body {
   font-weight: 500;
 }
 
-* :focus {
+/* * :focus {
  outline: 2px dashed #1E90FF;
  outline-offset: 2px;
-}
+} */
 
 
 
@@ -85,4 +87,91 @@ img {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+}
+
+
+/* Site header */
+.site-header__inner {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.logo {
+  display: block;
+  width: 120px;
+  height: 32.69px;
+}
+.header-logo {
+  margin-right: 45.43px;
+}
+
+.header-logo__img {
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.header-nav {
+ margin-right: auto;
+}
+.header-nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.header-nav_item:not(:last-child) {
+  margin-right: 30px;
+}
+.header-nav__link {
+  text-decoration: none;
+  color: var(--grey);
+  font-weight: 700;
+  line-height: 23px;
+  cursor: pointer;
+  letter-spacing: 0;
+  flex-grow: 1;
+  transition: color 0.2s ease;
+}
+
+.header-nav__link:active {
+  color: var(--dark-bg);
+}
+
+.header-regstration {
+  display: flex;
+  align-items: center;
+}
+.header-regstration__login {
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0;
+  flex-grow: 1;
+  margin-right: 37px;
+  color: var(--grey);
+  transition: color 0.2s ease;
+}
+
+.header-regstration__login:active {
+  color: var(--dark-bg);
+}
+.button {
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0;
+  flex-grow: 1;
+  color: #fff;
+  background-color: var(--light-green);
+  border-radius: 28px;
+  transition: background-color 0.2s ease;
+}
+.header-button {
+  padding: 8px 24px;
+}
+
+.button:active {
+  background-color: var(--active-button);
 }
