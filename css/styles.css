@@ -104,8 +104,18 @@ img {
   opacity: 0.6;
 }
 
-.header-button {
+.button--small {
   padding: 8px 24px;
+}
+
+.button--rectangle {
+ padding: 18px 40px 16px 41px;
+ border-radius: 10px;
+}
+
+.small-button--rectangle {
+  padding: 10px 31px 7px;
+  border-radius: 5px;
 }
 
 
@@ -191,4 +201,50 @@ img {
 
 .header-regstration__login:hover {
   color: var(--dark-bg);
+}
+
+/* HERO */
+
+.hero {
+  background-image: url("../img/working_with_computer.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 450px) top 30px;
+}
+.hero-container {
+
+}
+
+.hero__inner {
+  padding: 0;
+  margin: 0;
+  padding-top: 92px;
+  padding-bottom: 222px;
+  max-width: 600px;
+
+}
+.hero-content {
+  padding: 0;
+  margin: 0;
+}
+.hero-content__heading {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: -2px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: var(--blight-black);
+}
+.hero-content__title {
+ font-size: 22px;
+ line-height: 36px;
+ letter-spacing: 0.15px;
+ margin-top: 0;
+ margin-bottom: 38px;
+}
+.button {
+}
+.hero__img {
+  width: 733px;
+  height: 482px;
 }
