@@ -19,6 +19,9 @@ if (elUrlShortner) {//Agar elUrlShortner elementi bo'lsa
      //Changr button bgcolor
      evt.target.classList.add('url-shortner-result-copy__button');//Kichkina buttonlarni yrangini 'ozgartirish uchun qo'shimcha url-shortner-result-copy__button klasini qo'shish
 
+     //Copy link to cliboard
+     navigator.clipboard.writeText(evt.target.previousElementSibling.textContent);//kichkina button tugmasi bosilganda undan oldingi elementni matnini cliboardga kopya qilib olayapdi
+
      //1 sekunddan keyin buttonni avvalgi holatiga qaytarish
      setTimeout(function () {//vaqt funksiyasi
       evt.target.textContent = 'Copy';//1 sekunddan keyin buttonni matnini avvalgi copy matniga o'zgartirib qo'yadi
