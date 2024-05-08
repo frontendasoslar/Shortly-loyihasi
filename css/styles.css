@@ -399,5 +399,9 @@ select:-webkit-autofill:focus {
  margin-right: 24px;
 }
 .url-shortner-result__button {
- min-width: 103px;
+ min-width: 127px;
+}
+
+.url-shortner-result-copy__button {
+  background-color: #3A3054;
 }
