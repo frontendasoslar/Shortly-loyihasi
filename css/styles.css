@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Medium.woff2") format("woff2"),
-      url("../fonts/Poppins-Medium.woff") format("woff");
+  url("../fonts/Poppins-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -62,8 +62,8 @@ body {
 }
 
 /* * :focus {
- outline: 2px dashed #1E90FF;
- outline-offset: 2px;
+  outline: 2px dashed #1E90FF;
+  outline-offset: 2px;
 } */
 
 
@@ -153,12 +153,12 @@ select:-webkit-autofill:focus {
 }
 
 .button--rectangle {
- padding: 20px 40px 18px 41px;
- border-radius: 10px;
- display: inline-block;
- white-space: nowrap;
- border: 0;
- font-size: 20px;
+  padding: 20px 40px 18px 41px;
+  border-radius: 10px;
+  display: inline-block;
+  white-space: nowrap;
+  border: 0;
+  font-size: 20px;
 }
 
 .small-button--rectangle {
@@ -207,7 +207,7 @@ select:-webkit-autofill:focus {
   height: 32.69px;
 }
 .header-nav {
- margin-right: auto;
+  margin-right: auto;
 }
 .header-nav__list {
   list-style: none;
@@ -282,11 +282,11 @@ select:-webkit-autofill:focus {
   color: var(--blight-black);
 }
 .hero-content__title {
- font-size: 22px;
- line-height: 36px;
- letter-spacing: 0.15px;
- margin-top: 0;
- margin-bottom: 38px;
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  margin-top: 0;
+  margin-bottom: 38px;
 }
 
 .hero__img {
@@ -339,10 +339,10 @@ select:-webkit-autofill:focus {
   letter-spacing: 0.15px;
 }
 
-  .url-shortner__input:not(:focus):not(:placeholder-shown):invalid {
-    border-color: rgb(244, 99, 99);
-    color: rgb(244, 99, 99);
-  }
+.url-shortner__input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: rgb(244, 99, 99);
+  color: rgb(244, 99, 99);
+}
 .url-shortner__error-msg {
   display: none;
 }
@@ -394,14 +394,140 @@ select:-webkit-autofill:focus {
   text-overflow: ellipsis;
 }
 .url-shortnet__link {
- text-decoration: none;
- color: var(--light-green);
- margin-right: 24px;
+  text-decoration: none;
+  color: var(--light-green);
+  margin-right: 24px;
 }
 .url-shortner-result__button {
- min-width: 127px;
+  min-width: 127px;
 }
 
 .url-shortner-result-copy__button {
   background-color: #3A3054;
+}
+
+
+/* INDEX FEAUTURE */
+.index-feauture {
+  background-color: var(--light-grey);
+}
+.index-feauture__wraper {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 120px;
+}
+
+.inde-feauture__wrapper--info{
+  margin-bottom: 56px;
+}
+
+.index-feauture__heading {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: var(--blight-black);
+}
+.index-feauture__title {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.12px;
+}
+
+.line {
+  padding: 0;
+  margin: 0;
+  height: 8px;
+  border: 0;
+  background-color: var(--light-green);
+  transform: translateY(107px);
+}
+.index-feauture__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  list-style: none;
+}
+.statistic--list {
+
+}
+.index-feauture__item {
+  position: relative;
+  margin: 0;
+  max-width: 350px;
+  padding: 77px 32px 41px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.index-feauture__item:nth-child(2) {
+  margin-top: 44px;
+}
+
+.index-feauture__item:nth-child(3) {
+  margin-top: 88px;
+}
+.index-feauture__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.statistic--list__heading {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0px;
+  margin-bottom: 12px;
+  color: var(--blight-black);
+}
+.statistic--list__title {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: justify;
+}
+
+.statistic--list__img--wrapper {
+  position: absolute;
+  top: 0;
+  transform: translateY(-44px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  background-color: var(--darc-purple);
+}
+
+
+/* GTA part */
+.gta-part__wraper {
+  padding: 0;
+  margin: 0;
+  background-color: var(--darc-purple);
+  padding-top: 57px;
+  padding-bottom: 57px;
+  text-align: center;
+  background-image: url('../img/GTA-bacground.svg');
+}
+.gta-part__heading {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: #fff;
 }
