@@ -513,14 +513,21 @@ select:-webkit-autofill:focus {
 
 
 /* GTA part */
+.gta-part {
+  padding: 0;
+  margin: 0;
+  /* background-color: var(--darc-purple); */
+  background-image: url('../img/GTA-bacground.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 .gta-part__wraper {
   padding: 0;
   margin: 0;
-  background-color: var(--darc-purple);
-  padding-top: 57px;
-  padding-bottom: 57px;
+  padding-top: 46px;
+  padding-bottom: 46px;
   text-align: center;
-  background-image: url('../img/GTA-bacground.svg');
 }
 .gta-part__heading {
   padding: 0;
@@ -530,4 +537,118 @@ select:-webkit-autofill:focus {
   line-height: 48px;
   letter-spacing: -1px;
   color: #fff;
+}
+
+
+/* SITE FOOTER */
+.site-footer {
+ background-color: #232127;
+ padding-top: 71px;
+ padding-bottom: 71px;
+}
+
+.site-footer__wraper {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.footer-page {
+  padding: 0;
+  margin: 0;
+}
+.footer-logo {
+  width: 120px;
+  height: 32.67px;
+  margin-right: 261.43px;
+}
+
+.footer-logo__img {
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+}
+.footer-nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-right: 101px;
+}
+.footer-nav__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.footer-nav__list:not(:last-child) {
+  margin-right: 93px;
+}
+.footer-nav__list-heading {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  color: #fff;
+}
+.footer-nav__item {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: -0.23px;
+  color: #bfbfbf;
+}
+
+.footer-nav__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-nav__link {
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-nav__link:hover {
+  color: var(--light-green);
+}
+.footer-nav__link:active {
+  opacity: 0.8;
+}
+.footer-network {
+  padding: 0;
+  margin: 0;
+}
+.fotter-network__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.footer-network__item {
+  padding: 0;
+  margin: 0;
+}
+.footer-network__item:not(:last-child) {
+  margin-right: 24px;
+}
+.footer-network__link {
+ color: #fff;
+ transition: color 0.2s ease;
+}
+.footer-network__link:hover {
+ color: var(--light-green);
+}
+.footer-network__link:active {
+  opacity: 0.8;
+}
+.footer-network__img {
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
 }
